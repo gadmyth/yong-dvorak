@@ -25,3 +25,21 @@ default=dvzhengma
 
 6. kill the following: `ps -e | grep yong`, then restart yong:
 yong -d
+
+===========
+
+** How to use git and github?
+
+git config --global user.name "gadmyth"
+git config --global user.email "gamyth@gmail.com"
+
+cd yong-dv-zhengma
+git init
+git add *
+git commit -m"init my proj"
+
+git remote add origin git@github.com:gadmyth:/yong-dvorak.git
+git push origin master
+
+** commit all after modify your proj
+# git commit -a && git push origin master
