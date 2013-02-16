@@ -1,0 +1,27 @@
+1. install ECL (Embedded Common Lisp)
+
+2. prepare work
+chmod u+x dv.sh
+chmod u+x dvorak.sh
+
+3. ./dv.sh
+
+4. cp /dvzhengma.txt $YONG/mb
+example: export YONG /mnt/data/opt/yong/mb
+
+5. modify .yong/yong.ini
+
+add the following:
+[dvzhengma]
+name=郑码
+engine=libmb.so
+arg=mb/dvzhengma.txt
+
+change the following to:
+[IM]
+default=dvzhengma
+2=pinyin
+....
+
+6. kill the following: `ps -e | grep yong`, then restart yong:
+yong -d
